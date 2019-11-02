@@ -1,0 +1,3 @@
+(library
+ (name dotenv)
+ (libraries base unix stdio str uutf))
