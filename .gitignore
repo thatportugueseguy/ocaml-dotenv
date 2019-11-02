@@ -1,3 +1,6 @@
 .vscode
+_esy
 _build
+node_modules
 *.merlin
+*.install
