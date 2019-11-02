@@ -1,20 +1,7 @@
 {
   "checksum": "48cb07128c251993d659f4e78c937d14",
-  "root": "ocaml-dotenv@link-dev:./esy.json",
+  "root": "dotenv@link-dev:./esy.json",
   "node": {
-    "ocaml-dotenv@link-dev:./esy.json": {
-      "id": "ocaml-dotenv@link-dev:./esy.json",
-      "name": "ocaml-dotenv",
-      "version": "link-dev:./esy.json",
-      "source": { "type": "link-dev", "path": ".", "manifest": "esy.json" },
-      "overrides": [],
-      "dependencies": [
-        "ocaml@4.7.1004@d41d8cd9", "@opam/uutf@opam:1.0.2@4440868f",
-        "@opam/stdio@opam:v0.12.0@04b3b004",
-        "@opam/dune@opam:1.11.4@21d66ccd", "@opam/base@opam:v0.12.2@d687150c"
-      ],
-      "devDependencies": []
-    },
     "ocaml@4.7.1004@d41d8cd9": {
       "id": "ocaml@4.7.1004@d41d8cd9",
       "name": "ocaml",
@@ -27,6 +14,19 @@
       },
       "overrides": [],
       "dependencies": [],
+      "devDependencies": []
+    },
+    "dotenv@link-dev:./esy.json": {
+      "id": "dotenv@link-dev:./esy.json",
+      "name": "dotenv",
+      "version": "link-dev:./esy.json",
+      "source": { "type": "link-dev", "path": ".", "manifest": "esy.json" },
+      "overrides": [],
+      "dependencies": [
+        "ocaml@4.7.1004@d41d8cd9", "@opam/uutf@opam:1.0.2@4440868f",
+        "@opam/stdio@opam:v0.12.0@04b3b004",
+        "@opam/dune@opam:1.11.4@21d66ccd", "@opam/base@opam:v0.12.2@d687150c"
+      ],
       "devDependencies": []
     },
     "@opam/uutf@opam:1.0.2@4440868f": {
