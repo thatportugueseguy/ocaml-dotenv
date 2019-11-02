@@ -1,6 +1,5 @@
-
 {
-  "name": "ocaml-dotenv",
+  "name": "dotenv",
   "version": "0.0.1",
   "description": "Javascript's dotenv port to ocaml",
   "author": "José Nogueira <ze@thatportugueseguy.com>",

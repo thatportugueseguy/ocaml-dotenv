@@ -1,4 +1,4 @@
-# Ocaml-dotenv
+# Dotenv
 
 Small lib to allow storing config separate from code.
 
@@ -13,7 +13,7 @@ I have adapted it a little, but the result is the same.
 With opam:
 
 ```sh
-opam install ocaml-dotenv
+opam install dotenv
 ```
 
 ## Usage
