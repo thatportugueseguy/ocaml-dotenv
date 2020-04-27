@@ -1,2 +1,7 @@
-HELLO = World
-DEBUG = true
+HELLO=World
+DEBUG=true
+MULTISPACE=a a a a
+WORKS=
+JSON={"foo": "bar"}
+WHITESPACE=YUP
+VAR="    some value "
