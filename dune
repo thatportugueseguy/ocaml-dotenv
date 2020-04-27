@@ -1,4 +1,4 @@
 (library
  (name dotenv)
- (libraries base unix stdio str uutf)
+ (libraries base unix pcre stdio uutf)
  (public_name dotenv))

@@ -1,16 +1,19 @@
 .PHONY: all build clean
 
 build:
-	esy b dune build @install
+	dune build @install @tests/runtest
 
 all: build
 
 install:
-	esy b dune install
+	dune install
+
+test:
+	dune build @tests/runtest
 
 uninstall:
-	esy b dune uninstall
+	dune uninstall
 
 clean:
 	rm -rf _build *.install
-	esy b dune clean
+	dune clean
