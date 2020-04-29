@@ -36,12 +36,12 @@ let debug_log ~debug message = if debug then Stdio.print_endline @@ Printf.sprin
 
 let space_and_control_chars = "[\\p{Zs}\\p{Cc}]*"
 
-let letters_and_numbers = "[\\p{L}\\p{N}]+"
+let letters_numbers_underscores = "[\\p{L}\\p{N}_]+"
 
 let any_text = ".*"
 
 let regexp =
-  Printf.sprintf "^%s(%s)%s=(%s)$" space_and_control_chars letters_and_numbers space_and_control_chars any_text
+  Printf.sprintf "^%s(%s)%s=(%s)$" space_and_control_chars letters_numbers_underscores space_and_control_chars any_text
 
 let env_var_regex = Pcre.regexp ~flags:[ `UTF8 ] regexp
 

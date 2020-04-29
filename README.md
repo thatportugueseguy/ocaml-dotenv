@@ -2,11 +2,15 @@
 
 Small lib to allow storing config separate from code.
 
-This tool allows for the user to keep a file (default `.env`, hence the name) which contains environment variables to be exported when running locally. When deployed, the file will not be available and the variables will be read from the environment, as always.
+Dotenv loads variables from a file (named by default `.env`, hence the name) into the application environment. They can be read in `Sys.env`.
+
+This allows for the user to reproduce the deployed environments locally, as if the application was deployed in said environments.
+
+This way we keep the secrets out of the committed code, and the application ready to access them when deployed. Please don't commit the environment files ;)
 
 This is a port of JavaScript's Dotenv (https://github.com/motdotla/dotenv).
 
-I have adapted it a little, but the result is the same.
+I have adapted it a little, but the result should be similar enough so that nothing from the JS world is missed.
 
 ## Install
 
@@ -37,7 +41,7 @@ Dotenv has two methods: `parse` and `export`.
 
 `export` will run through the env file and add the valid variables to the environment. They are then accessible via `Sys.get_env` exactly as if they were on the deployment (or development) environment when the program started.
 
-`parse` will run through the env file and get all the variables onto an association list, so that it can then be used withouth having the variables on the environment. This is probably not used in most cases. Can be useful for loading files that aren't secret or for some types of debugging. Don't forget the debug option, there's a lot of good info there.
+`parse` will run through the env file and get all the variables onto an association list, so that it can then be used without having the variables on the environment. This is probably not used in most cases. Can be useful for loading files that aren't secret or for some types of debugging. Don't forget the debug option, there's a lot of good info there.
 
 ### Arguments to the functions:
 

@@ -18,7 +18,11 @@ depends: [
 ]
 synopsis: "Javascript's dotenv port to ocaml"
 description: """
-This tool allows for the user to keep a file (default `.env`, hence the name) which contains environment variables to be exported when running locally. When deployed, the file will not be available and the variables will be read from the environment, as always.
+Small lib to allow storing config separate from code.
+
+Dotenv loads variables from a file (named by default `.env`, hence the name) into the application environment. They can be read in `Sys.env`.
+
+This allows for the user to reproduce the deployed environments locally, as if the application was deployed in said environments.
 
 This is a port of JavaScript's Dotenv (https://github.com/motdotla/dotenv).
 """
