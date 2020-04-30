@@ -14,6 +14,7 @@ depends: [
   "base"
   "stdio"
   "uutf"
+  "pcre"
   "dune"
 ]
 synopsis: "Javascript's dotenv port to ocaml"

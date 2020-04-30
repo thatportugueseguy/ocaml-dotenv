@@ -1,3 +1,8 @@
+0.0.3 2020-04-30
+--------------
+
+- Fix missing PCRE dependency in opam file.
+
 0.0.2 2020-04-29
 --------------
 
